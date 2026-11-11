@@ -1,0 +1,4 @@
+<resources>
+    <item name="speed_value" type="id"/>
+    <item name="brake_value" type="id"/>
+</resources>

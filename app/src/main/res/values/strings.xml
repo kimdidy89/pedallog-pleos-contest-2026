@@ -1,0 +1,5 @@
+<resources>
+    <string name="font_license_body">Pretendard · SIL Open Font License 1.1\n\n%1$s</string>
+    <string name="live_status">속도: %1$s\n브레이크: %2$s\n속도 원본 시각 간격: %3$s\n급격한 속도 증가 기록: %4$d건</string>
+    <string name="session_stopped">%1$s 중지: %2$s</string>
+</resources>

@@ -1,0 +1,109 @@
+{
+  "sources": {
+    "pretendard": [
+      "orioncactus/pretendard",
+      "7aeb0698819be2b4097dae8ec8fe6a795e5cf3ae"
+    ],
+    "shadcn-admin": [
+      "satnaing/shadcn-admin",
+      "e16c87f213a5ba5e45964e9b67c792105ec74d26"
+    ],
+    "ui-ux-pro-max": [
+      "nextlevelbuilder/ui-ux-pro-max-skill",
+      "713eef51b04efc98d6fa565323b495f7c9c89fd4"
+    ]
+  },
+  "files": [
+    {
+      "project": "pretendard",
+      "source": "https://raw.githubusercontent.com/orioncactus/pretendard/7aeb0698819be2b4097dae8ec8fe6a795e5cf3ae/packages/pretendard/dist/public/static/Pretendard-Regular.otf",
+      "path": "assets/fonts/Pretendard-Regular.otf",
+      "bytes": 1574352,
+      "sha256": "3ffbacde6ab8411f1d2db54bb9b1f0b3ee2a738932033722cf0388c06aed1c93"
+    },
+    {
+      "project": "pretendard",
+      "source": "https://raw.githubusercontent.com/orioncactus/pretendard/7aeb0698819be2b4097dae8ec8fe6a795e5cf3ae/packages/pretendard/dist/web/static/woff2/Pretendard-Regular.woff2",
+      "path": "assets/fonts/Pretendard-Regular.woff2",
+      "bytes": 765892,
+      "sha256": "fad853f7f47c6c8b103171e7193fa095708cdcd70850a71d93aa5379e8a61d63"
+    },
+    {
+      "project": "pretendard",
+      "source": "https://raw.githubusercontent.com/orioncactus/pretendard/7aeb0698819be2b4097dae8ec8fe6a795e5cf3ae/packages/pretendard/dist/public/static/Pretendard-SemiBold.otf",
+      "path": "assets/fonts/Pretendard-SemiBold.otf",
+      "bytes": 1583704,
+      "sha256": "c89bc43027dc7cde5726e96223376f8eec09302b2fc1f8147fd5b57cfc376118"
+    },
+    {
+      "project": "pretendard",
+      "source": "https://raw.githubusercontent.com/orioncactus/pretendard/7aeb0698819be2b4097dae8ec8fe6a795e5cf3ae/packages/pretendard/dist/web/static/woff2/Pretendard-SemiBold.woff2",
+      "path": "assets/fonts/Pretendard-SemiBold.woff2",
+      "bytes": 785856,
+      "sha256": "c863f76a7de5c1ddc1ed8b2fa794964530774592c4f31407a84e2a2ae93f17f0"
+    },
+    {
+      "project": "pretendard",
+      "source": "https://raw.githubusercontent.com/orioncactus/pretendard/7aeb0698819be2b4097dae8ec8fe6a795e5cf3ae/packages/pretendard/dist/public/static/Pretendard-Bold.otf",
+      "path": "assets/fonts/Pretendard-Bold.otf",
+      "bytes": 1576660,
+      "sha256": "2e91915fab54df71cc9598ebf608b2bdb54c6fe3c066ac61dff0bc44fca71cc7"
+    },
+    {
+      "project": "pretendard",
+      "source": "https://raw.githubusercontent.com/orioncactus/pretendard/7aeb0698819be2b4097dae8ec8fe6a795e5cf3ae/packages/pretendard/dist/web/static/woff2/Pretendard-Bold.woff2",
+      "path": "assets/fonts/Pretendard-Bold.woff2",
+      "bytes": 791156,
+      "sha256": "4609c3356e536fafe38f4add0daeceb3d8595d3057bce13c428c33ddbd43d362"
+    },
+    {
+      "project": "pretendard",
+      "source": "https://raw.githubusercontent.com/orioncactus/pretendard/7aeb0698819be2b4097dae8ec8fe6a795e5cf3ae/LICENSE",
+      "path": "assets/licenses/pretendard.txt",
+      "bytes": 4816,
+      "sha256": "82e9c8a4b203261f10ddba1296422d64914ff3d4b7bd8a12896d03f0f088d70a"
+    },
+    {
+      "project": "shadcn-admin",
+      "source": "https://raw.githubusercontent.com/satnaing/shadcn-admin/e16c87f213a5ba5e45964e9b67c792105ec74d26/LICENSE",
+      "path": "assets/licenses/shadcn-admin.txt",
+      "bytes": 1066,
+      "sha256": "d28c723c33a18dfed6af67b1a0ac368724f79bcb80750d3e080dbcf8dedb9e4b"
+    },
+    {
+      "project": "ui-ux-pro-max",
+      "source": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/713eef51b04efc98d6fa565323b495f7c9c89fd4/LICENSE",
+      "path": "assets/licenses/ui-ux-pro-max.txt",
+      "bytes": 1075,
+      "sha256": "738f69dfa83db5c347c678fb9d90e560877059f0de93a327c39001bff92dc014"
+    },
+    {
+      "project": "shadcn-admin",
+      "source": "https://raw.githubusercontent.com/satnaing/shadcn-admin/e16c87f213a5ba5e45964e9b67c792105ec74d26/src/components/ui/card.tsx",
+      "path": "dashboard/src/components/ui/card.tsx",
+      "bytes": 1988,
+      "sha256": "72728c3734479c247347759fc11bb01c3acac38f8e87da6aeb03d69c39e0f9cc"
+    },
+    {
+      "project": "shadcn-admin",
+      "source": "https://raw.githubusercontent.com/satnaing/shadcn-admin/e16c87f213a5ba5e45964e9b67c792105ec74d26/src/components/ui/button.tsx",
+      "path": "dashboard/src/components/ui/button.tsx",
+      "bytes": 2122,
+      "sha256": "97ed8ef5651a6e264ded042b024b5be39673ba2ff222017fbcf845cf3ed37226"
+    },
+    {
+      "project": "shadcn-admin",
+      "source": "https://raw.githubusercontent.com/satnaing/shadcn-admin/e16c87f213a5ba5e45964e9b67c792105ec74d26/src/components/ui/badge.tsx",
+      "path": "dashboard/src/components/ui/badge.tsx",
+      "bytes": 1630,
+      "sha256": "a642d7a932b91ec610f09078452d34c379900845066955311506b6d503ea11e6"
+    },
+    {
+      "project": "shadcn-admin",
+      "source": "https://raw.githubusercontent.com/satnaing/shadcn-admin/e16c87f213a5ba5e45964e9b67c792105ec74d26/src/lib/utils.ts",
+      "path": "dashboard/src/lib/utils.ts",
+      "bytes": 2337,
+      "sha256": "cc244af40baa5fe88abff3f80b424a7aa654b3137a7db612a8fe94861b61e04e"
+    }
+  ]
+}

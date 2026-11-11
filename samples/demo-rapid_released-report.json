@@ -1,0 +1,47 @@
+{
+  "mode": "DEMO",
+  "completeSession": true,
+  "scope": "observational_only_no_misapplication_or_safety_claim",
+  "recordCount": 206,
+  "speedSourceIntervalMs": {
+    "count": 100,
+    "min": 100,
+    "median": 102.0,
+    "p95": 137,
+    "max": 303
+  },
+  "speedGapsOver500ms": 0,
+  "speedDuplicateOrReordered": 0,
+  "speedSourceAgeMs": {
+    "count": 101,
+    "min": 0,
+    "median": 0,
+    "p95": 1,
+    "max": 1
+  },
+  "brakeReadRoundTripMs": null,
+  "unknownBrakeObservationCount": 0,
+  "brakeObservationCount": 101,
+  "brakeTimingLimit": "host receipt only; no vehicle-source timestamp; no reaction-time inference",
+  "propertyConfigurations": [],
+  "propertiesWithAvailableSamples": [],
+  "acceleratorSamplesActuallyReceived": false,
+  "brakeTransitions": [
+    {
+      "hostElapsedMs": 281342,
+      "state": "RELEASED"
+    }
+  ],
+  "rapidSpeedGrowthEvents": [
+    {
+      "sourceElapsedMs": 284492,
+      "speedKmh": 10.368,
+      "accelerationMps2": 2.568218298555377,
+      "brakeObservation": "RELEASED",
+      "brakeObservationAgeMs": 110,
+      "classification": "pedal_intent_unknown",
+      "hostElapsedMs": 284493,
+      "sinceObservedBrakeTransitionMs": 3151
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "welcomeHome": true,
+  "recordingState": true,
+  "historyListAndDetail": true,
+  "emptyDate": true,
+  "missingSignalState": true,
+  "account": true,
+  "settings": true,
+  "lightDark": true,
+  "realOAuth": false
+}

@@ -1,0 +1,13 @@
+{
+  "versionName": "0.10.0-mascot-preview",
+  "versionCode": 10,
+  "bytes": 36575820,
+  "sha256": "dc81d8a108a7b3548663ebe2db49734b5c87566685fee8d19e2f21fe09b86dd7",
+  "poses": 7,
+  "newPoses": 6,
+  "runtimeImageService": false,
+  "editable3DModel": false,
+  "automaticIgnitionRecording": false,
+  "serverSynchronization": false,
+  "actualAuthentication": false
+}

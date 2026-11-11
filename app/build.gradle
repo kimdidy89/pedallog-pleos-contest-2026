@@ -1,0 +1,81 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.kotlin.plugin.compose'
+}
+def releaseKeys = new Properties()
+def releaseKeysFile = rootProject.file('_info/private/release-signing.properties')
+if (releaseKeysFile.exists()) releaseKeysFile.withInputStream { releaseKeys.load(it) }
+android {
+    namespace 'dev.pedalprobe'
+    compileSdk 35
+    useLibrary 'android.car'
+    sourceSets { main { assets.srcDirs += rootProject.file('assets') } }
+    defaultConfig {
+        applicationId 'dev.pedalprobe'
+        minSdk 28
+        targetSdk 34
+        versionCode 10
+        versionName '0.10.0-mascot-preview'
+    }
+    signingConfigs {
+        release {
+            if (releaseKeysFile.exists()) {
+                storeFile rootProject.file(releaseKeys.getProperty('storeFile'))
+                storePassword releaseKeys.getProperty('storePassword')
+                keyAlias releaseKeys.getProperty('keyAlias')
+                keyPassword releaseKeys.getProperty('keyPassword')
+            }
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions { jvmTarget = '17' }
+    buildFeatures { compose true }
+}
+gradle.taskGraph.whenReady { graph ->
+    if (graph.allTasks.any { it.path in [':app:assembleRelease', ':app:packageRelease'] } && !releaseKeysFile.exists()) {
+        throw new GradleException('Release signing is not configured. See docs/RELEASE.md; never commit signing keys.')
+    }
+}
+dependencies {
+    implementation 'ai.pleos.playground:Vehicle:2.3.2'
+    implementation platform('androidx.compose:compose-bom:2025.03.00')
+    implementation 'androidx.activity:activity-compose:1.10.1'
+    implementation 'androidx.compose.ui:ui'
+    implementation 'androidx.compose.foundation:foundation'
+    implementation 'androidx.compose.material3:material3'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.json:json:20240303'
+}
+
+// Windows 한글 경로에서 Gradle 테스트 작업자의 클래스 로딩 실패를 피한다.
+// 소스와 결과 보고서는 원래 경로에 두고 JVM에 전달하는 바이트코드만 임시 복사한다.
+tasks.withType(Test).configureEach {
+    if (System.getProperty('os.name').toLowerCase().contains('windows') && project.projectDir.path.any { ((int) it) > 127 }) {
+        doFirst {
+            def taskRoot = new File(System.getProperty('java.io.tmpdir'), 'pedallog-jvm-tests/' + Integer.toHexString(rootProject.projectDir.path.hashCode()) + '/' + name)
+            def relocated = [:]
+            (classpath.files + testClassesDirs.files).each { original ->
+                if (original.exists() && original.path.any { ((int) it) > 127 } && !relocated.containsKey(original)) {
+                    def target = new File(taskRoot, Integer.toHexString(original.path.hashCode()) + (original.isFile() ? '.jar' : ''))
+                    if (!target.canonicalPath.startsWith(taskRoot.canonicalPath + File.separator)) throw new GradleException('테스트 임시 경로 검증 실패')
+                    target.parentFile.mkdirs()
+                    if (original.isDirectory()) project.sync { from original; into target }
+                    else java.nio.file.Files.copy(original.toPath(), target.toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING)
+                    relocated[original] = target
+                }
+            }
+            classpath = files(classpath.files.collect { relocated.get(it, it) })
+            testClassesDirs = files(testClassesDirs.files.collect { relocated.get(it, it) })
+        }
+    }
+}

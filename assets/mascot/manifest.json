@@ -1,0 +1,63 @@
+{
+  "type": "3D 렌더 스타일 2D PNG",
+  "generator": "내장 이미지 생성 도구",
+  "identityReference": "assets/intro/fox-guide.png",
+  "files": [
+    {
+      "pose": "welcome",
+      "path": "assets/intro/fox-guide.png",
+      "sha256": "d07ee6ff210f49517b6ef9737a06a9b8c7a6e95db00ba2a79b57bf645cbf8da8",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1388372
+    },
+    {
+      "pose": "recording",
+      "path": "assets/mascot/fox-recording.png",
+      "sha256": "ad8ec9cd1e961dc011b93feabd85c360c89dac4db30157118e4db8a03b420192",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1290178
+    },
+    {
+      "pose": "history",
+      "path": "assets/mascot/fox-history.png",
+      "sha256": "d384937c3a804e72dac98b16c966a34d7f8e0d8e2c5e5918dc49ad33c180e6e4",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1285542
+    },
+    {
+      "pose": "empty",
+      "path": "assets/mascot/fox-empty.png",
+      "sha256": "a9b04683dad0f57ffec44bd02f1fcdaf9b6b67fdc156613d03928405420723bb",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1248036
+    },
+    {
+      "pose": "account",
+      "path": "assets/mascot/fox-account.png",
+      "sha256": "9c8568a10528b29c7712617fbf408a6db6dfff18acb988ddbf2383295910c2e8",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1241077
+    },
+    {
+      "pose": "settings",
+      "path": "assets/mascot/fox-settings.png",
+      "sha256": "2d844039f964a7e0bd31b3c2bd14a0d06fafbfbfb8935e63361deab4af4c592d",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1290467
+    },
+    {
+      "pose": "unknown",
+      "path": "assets/mascot/fox-unknown.png",
+      "sha256": "e59c020b836797b66ed6b560588dd2dbf4a693d94c3fb2d268d1b1fae12d6e3a",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1261906
+    }
+  ]
+}

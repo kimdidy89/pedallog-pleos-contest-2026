@@ -1,0 +1,10 @@
+{
+  "type": "생성한 3D 렌더 스타일의 2D 캐릭터 이미지",
+  "generator": "내장 이미지 생성 도구",
+  "reference": "사용자 첨부 여우 이미지의 색감·친근함 참고; 원본 이미지 앱 미탑재",
+  "sourceFile": "fox-guide.png",
+  "sha256": "d07ee6ff210f49517b6ef9737a06a9b8c7a6e95db00ba2a79b57bf645cbf8da8",
+  "background": "투명",
+  "editable3DModel": false,
+  "runtimeExternalApi": false
+}

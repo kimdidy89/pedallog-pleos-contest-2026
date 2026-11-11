@@ -1,0 +1,12 @@
+{
+  "note": "카카오·네이버 인증 SDK는 데모에 도입하지 않았습니다.",
+  "licenseSha256": "809fa1ed21450f59827d1e9aec720bbc4b687434fa22283c6cb5dd82a47ab9c0",
+  "licenseSource": "https://raw.githubusercontent.com/androidx/androidx/a7b096ee13fc9d117a6942929e698d59b5437c21/LICENSE.txt",
+  "license": "Apache-2.0",
+  "directDependencies": {
+    "org.jetbrains.kotlin.android": "2.1.20",
+    "org.jetbrains.kotlin.plugin.compose": "2.1.20",
+    "androidx.activity:activity-compose": "1.10.1",
+    "androidx.compose:compose-bom": "2025.03.00"
+  }
+}

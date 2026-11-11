@@ -1,0 +1,36 @@
+{
+  "mode": "DEMO",
+  "completeSession": true,
+  "scope": "observational_only_no_misapplication_or_safety_claim",
+  "recordCount": 204,
+  "speedSourceIntervalMs": {
+    "count": 100,
+    "min": 100,
+    "median": 102.0,
+    "p95": 122,
+    "max": 240
+  },
+  "speedGapsOver500ms": 0,
+  "speedDuplicateOrReordered": 0,
+  "speedSourceAgeMs": {
+    "count": 101,
+    "min": 0,
+    "median": 0,
+    "p95": 0,
+    "max": 1
+  },
+  "brakeReadRoundTripMs": null,
+  "unknownBrakeObservationCount": 0,
+  "brakeObservationCount": 101,
+  "brakeTimingLimit": "host receipt only; no vehicle-source timestamp; no reaction-time inference",
+  "propertyConfigurations": [],
+  "propertiesWithAvailableSamples": [],
+  "acceleratorSamplesActuallyReceived": false,
+  "brakeTransitions": [
+    {
+      "hostElapsedMs": 265971,
+      "state": "RELEASED"
+    }
+  ],
+  "rapidSpeedGrowthEvents": []
+}

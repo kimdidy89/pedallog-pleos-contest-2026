@@ -1,0 +1,37 @@
+{
+  "tool": "내장 이미지 생성 도구",
+  "reference": "assets/intro/fox-guide.png",
+  "base": "Use case: identity-preserve / stylized-concept. Create one production transparent PNG mascot asset for the Korean PedalLog native vehicle data-recording app. The input image is the EXACT CHARACTER IDENTITY reference. Preserve the same original fox identity: oversized rounded orange ears with pale interiors, orange rounded head, tiny glossy black oval eyes, cream muzzle and chest, warm blush, small dark nose, plush rounded orange body, large cream-tipped tail, teal knotted neckerchief. Preserve the same high quality softly lit tactile clay/vinyl 3D-render style, warm orange and cream palette, soft studio light and gentle contact shadow. Full body, three-quarter front view, centered on a very low ivory round pedestal, square composition with padding around ears and tail. The character is the only subject. Remove the reference's toy car and blue closed book, and use ONLY the pose/prop specified below. Genuine transparent background, alpha preserved. No text, letters, numbers, brand marks, watermark, UI, scenery, collage, panel borders, extra characters, or warning/alarm symbols. Calm professional friendliness suited to reviewing possible sudden-acceleration incidents; not frantic, not celebrating an accident. Pose: ",
+  "variants": [
+    {
+      "key": "recording",
+      "role": "기록 중",
+      "pose": "The fox sits upright with a calm attentive focused expression, holding an ivory clipboard in one paw and a short orange pencil in the other, gently taking notes. The clipboard has only three small embossed horizontal lines, no writing. Both eyes open, small concentrated smile, subtly leaning toward the notes. Same teal scarf and ivory platform."
+    },
+    {
+      "key": "history",
+      "role": "지난 기록·상세 조회",
+      "pose": "The fox sits thoughtfully looking at an open cobalt blue logbook resting in its lap while holding a small round ivory magnifying glass beside the book, as if carefully reviewing saved records. Curious calm expression, both eyes open, soft slight smile. Only abstract embossed lines on the pages, no writing. Same teal scarf and ivory platform."
+    },
+    {
+      "key": "empty",
+      "role": "빈 기록",
+      "pose": "The fox sits holding an OPEN EMPTY cream document folder with orange tabs, showing its empty interior, tilting its head a little with a gently curious hopeful expression. Relaxed ears, soft smile, no tears or sad eyes, no question mark. The folder is clearly empty with no papers. Same teal scarf and ivory platform."
+    },
+    {
+      "key": "account",
+      "role": "계정·간편가입",
+      "pose": "The fox stands in a friendly welcoming pose, one paw open in invitation while the other holds a small blank rounded cream profile card with one embossed simple person silhouette. Warm reassuring smile, eyes open. No checkmark, lock, shield, badges or provider logos. Same teal scarf and ivory platform."
+    },
+    {
+      "key": "settings",
+      "role": "설정",
+      "pose": "The fox sits and gently adjusts one large simple orange rotary knob on a small ivory panel, with an attentive helpful smile and both eyes open. The knob is a generic app preference control, not car equipment. No labels, numbers, no dashboard or tools scattered around. Same teal scarf and ivory platform."
+    },
+    {
+      "key": "unknown",
+      "role": "정보 없음·읽기 실패",
+      "pose": "The fox sits and looks at a small cream note card with a single simple interrupted embossed grey line, holding its free paw palm-up in a gentle 'let us check' gesture. Slightly puzzled raised eyebrow, kind calm face and eyes open, no panic, no tears, no alarm, no exclamation or question marks. Same teal scarf and ivory platform."
+    }
+  ]
+}
